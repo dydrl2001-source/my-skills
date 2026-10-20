@@ -11,6 +11,7 @@ Read only the matching reference:
 
 | Current task | Additional check |
 |---|---|
+| A short implementation request needs project-specific detail | [Request brief](references/request-brief.md): read existing code, identify the smallest requested behavior and observable completion criteria. |
 | Requirements or names have conflicting business meanings | [Domain language](references/domain-language.md): check existing terminology against code; record resolved concepts sparingly. |
 | Callers coordinate too many steps, or a refactor needs a clear interface | [Module design](references/module-design.md): hide orchestration behind a small interface and test observable behavior. |
 | Reviewing a change or preparing completion evidence | [Review](references/review.md): assess requirements and documented standards separately, using the same concrete change scope. |
@@ -20,5 +21,7 @@ Use the user's language for explanations and the repository's established names 
 Documentation follows the work: reuse established locations and create a glossary entry or decision record only when there is a concrete resolved concept or durable decision to preserve. A cosmetic edit does not need domain documents or a new architecture exercise.
 
 For reviews, extend the existing reviewer brief with both check dimensions. Use available review tools or agents according to the active workflow and authorization; the two dimensions do not require two additional reviewers. Report actual findings and verification limits concisely.
+
+A request for a prompt or plan ends with that deliverable. Existing authorization to implement does not require an extra approval round merely because the request was clarified.
 
 Adapted from selected Matt Pocock skills; see [provenance](references/provenance.md) and [LICENSE](LICENSE).

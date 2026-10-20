@@ -7,8 +7,8 @@ from runtime import runtime_root, venv_python
 
 
 def main():
-    if not (3, 10) <= sys.version_info[:2] < (3, 14):
-        print('Use Python 3.10 through 3.13 (3.12 recommended).', file=sys.stderr)
+    if not (3, 11) <= sys.version_info[:2] < (3, 14):
+        print('Use Python 3.11 through 3.13 (3.12 recommended; Pillow 13 requires 3.11+).', file=sys.stderr)
         return 2
     root = runtime_root()
     python = venv_python(root)

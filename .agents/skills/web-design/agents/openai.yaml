@@ -1,0 +1,4 @@
+interface:
+  display_name: "Web Design · 웹디자인"
+  short_description: "사용자 흐름과 브랜드에 맞춰 웹 화면을 기획하고 디자인·구현·검증합니다."
+  default_prompt: "Use $web-design to plan or improve this web page, preserving its brand and connecting its primary action. Explain in Korean."

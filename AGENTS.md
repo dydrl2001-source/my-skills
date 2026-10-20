@@ -6,13 +6,17 @@ This repository contains reusable skills in `.agents/skills/`:
 - `diagram-design`: diagrams and visual explanations.
 - `engineering-upgrades`: domain language, module boundaries and code review checks.
 - `video-reader`: timestamped video frames and local speech transcription.
+- `web-design`: audience, brand, user journey and working web actions.
+- `card-news`: portable Korean PNG carousel rendering with a bundled licensed font.
 
 Read the relevant skill's SKILL.md before use. Supporting resources live in that skill's directory. Explain results in the user's language. Existing authorization and task scope take precedence over optional setup prompts in imported guidance.
 
-For video runtime setup use Python 3.10–3.13 (3.12 recommended):
+For video runtime setup use Python 3.11–3.13 (3.12 recommended):
 `python3 .agents/skills/video-reader/scripts/setup.py`
 Then run `python3 .agents/skills/video-reader/scripts/run.py doctor`.
 Setup needs PyPI network access. Online video retrieval and first speech model download need network access during execution or preloading. Do not claim videos were watched without reviewing generated frames and transcript status. Hosts without shell/Python cannot execute the video pipeline.
+
+Card rendering needs Python with Pillow; read `.agents/skills/card-news/SKILL.md`. It can reuse the installed video runtime's Python or a separate compatible environment. Do not automatically install into the system interpreter. Open generated PNGs to verify the visual result.
 
 Run tests with the video runtime interpreter: `python -m unittest discover -s tests -v`.
 Build the portable plugin archive: `python scripts/build_plugin.py --output <outside-repo-path.zip>`.

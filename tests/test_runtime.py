@@ -3,6 +3,7 @@ import os
 from pathlib import Path
 import subprocess
 import sys
+import io
 import tempfile
 import unittest
 from unittest.mock import patch
@@ -42,6 +43,15 @@ class PortableRuntimeTests(unittest.TestCase):
         self.assertEqual(result.returncode, 2)
         self.assertIn('setup.py', result.stderr)
         self.assertNotIn('Traceback', result.stderr)
+
+    def test_setup_rejects_python_310_before_installing_incompatible_pillow(self):
+        with patch.object(sys, 'path', [str(SCRIPTS), *sys.path]):
+            spec = importlib.util.spec_from_file_location('video_setup', SCRIPTS / 'setup.py')
+            setup = importlib.util.module_from_spec(spec)
+            spec.loader.exec_module(setup)
+        with patch.object(sys, 'version_info', (3, 10, 0)), patch('subprocess.run') as command, patch('sys.stderr', new_callable=io.StringIO):
+            self.assertEqual(setup.main(), 2)
+            command.assert_not_called()
 
 
 if __name__ == '__main__':

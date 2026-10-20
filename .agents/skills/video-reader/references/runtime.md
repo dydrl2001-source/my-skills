@@ -2,7 +2,7 @@
 
 `scripts/run.py` selects an isolated runtime on Windows, Linux or macOS. Windows uses `%LOCALAPPDATA%/CodexVideoReader/venv/Scripts/python.exe`; Unix uses `${XDG_CACHE_HOME:-~/.cache}/CodexVideoReader/venv/bin/python`. `VIDEO_READER_HOME` overrides the runtime root. Dependencies and model cache remain outside the skill so installing a skill update preserves them. The PowerShell wrappers remain available on Windows.
 
-If `doctor` reports missing dependencies, use the bundled setup with an available Python 3.10–3.13 executable (3.12 recommended). Locate an existing compatible interpreter before installing Python. Codex's workspace dependency tool can supply its bundled Python path.
+If `doctor` reports missing dependencies, use the bundled setup with an available Python 3.11–3.13 executable (3.12 recommended). Pillow 13 requires Python 3.11 or newer. Locate an existing compatible interpreter before installing Python. Codex's workspace dependency tool can supply its bundled Python path.
 
 ```sh
 python3 '<skill-dir>/scripts/setup.py'

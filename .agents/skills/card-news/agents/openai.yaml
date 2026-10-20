@@ -1,0 +1,4 @@
+interface:
+  display_name: "카드뉴스"
+  short_description: "한국어 메시지를 여러 장의 카드뉴스 PNG로 구성하고 검수합니다"
+  default_prompt: "$card-news를 사용해 제공한 내용을 읽기 쉬운 한국어 카드뉴스 PNG로 만들어 주세요."

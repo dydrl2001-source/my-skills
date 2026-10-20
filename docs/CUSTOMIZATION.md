@@ -5,7 +5,7 @@
 ## 원본과 배포본
 
 - 원본은 이 저장소의 `.agents/skills/<skill-name>/`에 저장합니다. 기존 `skills/`와 `.claude/`의 자료를 자동 통합하거나 설치하지 않습니다.
-- 현재 개인 묶음은 `diagram-design`, `engineering-upgrades`, `video-reader`입니다. 새 스킬을 묶음에 넣을 때는 빌더의 선택 목록과 테스트를 함께 수정합니다.
+- 현재 개인 묶음은 `web-design`, `card-news`, `diagram-design`, `engineering-upgrades`, `video-reader`입니다. 새 스킬을 묶음에 넣을 때는 빌더의 선택 목록과 테스트를 함께 수정합니다.
 - Codex 로컬의 `~/.codex/skills`와 플러그인 캐시는 배포된 사본입니다. 캐시를 원본으로 편집하지 않습니다.
 - 계정용 비공개 플러그인은 [내 작업 도구](https://chatgpt.com/plugins/plugins_6ad77900d06c8191a674a2837de039b6)이며 ID는 `plugins_6ad77900d06c8191a674a2837de039b6`입니다. 변경 시 기존 ID와 공개 범위를 유지하고 중복 플러그인을 만들지 않습니다.
 

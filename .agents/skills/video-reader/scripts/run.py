@@ -10,7 +10,7 @@ def main():
     root = runtime_root()
     python = venv_python(root)
     if not python.is_file():
-        print('Video Reader runtime is missing. Run Python 3.10-3.13 with scripts/setup.py first.', file=sys.stderr)
+        print('Video Reader runtime is missing. Run Python 3.11-3.13 with scripts/setup.py first.', file=sys.stderr)
         return 2
     env = dict(os.environ, VIDEO_READER_HOME=str(root))
     return subprocess.call([str(python), str(Path(__file__).with_name('video_reader.py')), *sys.argv[1:]], env=env)
