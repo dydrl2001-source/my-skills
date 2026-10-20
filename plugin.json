@@ -1,0 +1,20 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "personal-agent-skills",
+  "version": "0.1.0",
+  "description": "개인 작업에 쓰는 다이어그램, 개발 품질 점검, 영상 분석 스킬 모음. 영상 분석은 Python 실행 환경이 필요합니다.",
+  "author": {"name": "dydrl2001-source"},
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "내 작업 도구",
+        "shortDescription": "다이어그램·개발 점검·영상 분석",
+        "longDescription": "다이어그램 작성, 개발 용어와 인터페이스 및 리뷰 점검, 영상 프레임 추출과 음성 전사를 위한 개인 스킬 모음입니다. 영상 분석은 Python과 셸 실행 도구가 있는 환경에서 동작하며, 설치만으로 영상 서버가 제공되지는 않습니다.",
+        "developerName": "dydrl2001-source",
+        "category": "Productivity",
+        "capabilities": [],
+        "defaultPrompt": ["이 내용을 이해하기 쉬운 다이어그램으로 그려줘.", "이 코드의 요구사항과 설계를 검토해줘.", "이 영상을 확인하고 핵심 장면과 내용을 설명해줘."]
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Engineering Upgrades · 개발 보완"
+  short_description: "기존 개발 절차에 프로젝트 용어 정리, 인터페이스 설계와 근거 있는 코드 검토를 더합니다."
+  default_prompt: "Use $engineering-upgrades to complement the current development workflow with the relevant domain, interface-design, or review checks."

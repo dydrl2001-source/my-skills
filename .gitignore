@@ -12,3 +12,20 @@ hello.txt
 Helloworld.txt
 output/
 outputs/
+
+# Personal portable skills
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+dist/
+video-evidence/
+models/
+.env
+.env.*
+*cookies*
+*.mp4
+*.mov
+*.webm
+*.wav
+!.agents/skills/diagram-design/assets/*.html

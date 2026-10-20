@@ -1,5 +1,11 @@
 # My Skills Hub
 
+## 개인 커스텀 스킬 원본
+
+앞으로 직접 만들거나 커스터마이징하는 스킬은 이 저장소에서 관리합니다. Codex용 원본은 [`.agents/skills/`](.agents/skills/), 사용법과 클라우드 설정은 [개인 스킬 안내](docs/PERSONAL_SKILLS.md), 변경·검증·플러그인 배포 절차는 [커스터마이징 규칙](docs/CUSTOMIZATION.md)에 있습니다.
+
+현재 개인 묶음은 `diagram-design`, `engineering-upgrades`, `video-reader` 세 가지이며, 계정용 비공개 플러그인은 [내 작업 도구](https://chatgpt.com/plugins/plugins_6ad77900d06c8191a674a2837de039b6)입니다. 저장소 변경과 플러그인 배포는 별도 단계입니다.
+
 Claude Code를 위한 커스텀 스킬 모음입니다. 개발 생산성을 높이기 위한 다양한 자동화 스킬들을 제공합니다.
 
 ---

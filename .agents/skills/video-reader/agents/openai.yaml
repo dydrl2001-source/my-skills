@@ -1,0 +1,4 @@
+interface:
+  display_name: "Video Reader · 영상 읽기"
+  short_description: "영상 링크와 파일에서 시간별 장면 이미지와 음성 대본을 추출해 내용을 확인합니다."
+  default_prompt: "Use $video-reader to inspect this video, review its timestamped frames and transcript, and explain what it shows in Korean."
