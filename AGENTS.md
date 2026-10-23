@@ -8,6 +8,7 @@ This repository contains reusable skills in `.agents/skills/`:
 - `video-reader`: timestamped video frames and local speech transcription.
 - `web-design`: audience, brand, user journey and working web actions.
 - `card-news`: portable Korean PNG carousel rendering with a bundled licensed font.
+- `emil-design-eng`: Emil Kowalski's UI polish, component and animation guidance (MIT; pinned upstream in PROVENANCE.md).
 
 Read the relevant skill's SKILL.md before use. Supporting resources live in that skill's directory. Explain results in the user's language. Existing authorization and task scope take precedence over optional setup prompts in imported guidance.
 

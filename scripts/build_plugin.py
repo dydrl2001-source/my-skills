@@ -11,7 +11,7 @@ EXCLUDED = {'__pycache__', '.git', '.venv', 'venv', 'node_modules'}
 PRIVATE_DIRS = {'models', 'video-evidence', 'credentials', 'secrets', 'output', 'outputs'}
 PRIVATE_SUFFIXES = {'.mp4', '.mov', '.webm', '.wav', '.mp3', '.pem', '.key'}
 PRIVATE_NAMES = {'transcript.txt', 'transcript.json'}
-EXPECTED_SKILLS = {'diagram-design', 'engineering-upgrades', 'video-reader', 'web-design', 'card-news'}
+EXPECTED_SKILLS = {'diagram-design', 'engineering-upgrades', 'video-reader', 'web-design', 'card-news', 'emil-design-eng'}
 
 
 def build(output):

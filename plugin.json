@@ -1,17 +1,17 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "personal-agent-skills",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "웹디자인, 카드뉴스, 다이어그램, 개발 점검, 영상 분석을 위한 개인 스킬 모음입니다. 이미지·영상 처리에는 Python 실행 환경이 필요합니다.",
   "repository": "https://github.com/dydrl2001-source/my-skills",
-  "author": {"name": "dydrl2001-source"},
+  "author": {"name": "용기 존재와", "email": "dydrl2001@gmail.com"},
   "extensions": {
     "com.openai": {
       "interface": {
         "displayName": "내 작업 도구",
         "shortDescription": "웹디자인·카드뉴스·개발·영상 도구",
         "longDescription": "웹 화면 기획과 구현, 한글 카드뉴스 PNG 제작, 다이어그램, 개발 요구사항과 리뷰 점검, 영상 장면 추출과 음성 전사를 위한 개인 스킬 모음입니다. 카드뉴스와 영상 처리는 Python·셸·이미지 확인 도구가 있는 환경에서 동작합니다.",
-        "developerName": "dydrl2001-source",
+        "developerName": "용기 존재와",
         "category": "Productivity",
         "capabilities": [],
         "defaultPrompt": ["이 내용을 이해하기 쉬운 다이어그램으로 그려줘.", "이 코드의 요구사항과 설계를 검토해줘.", "이 영상을 확인하고 핵심 장면과 내용을 설명해줘."]

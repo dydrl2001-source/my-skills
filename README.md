@@ -4,9 +4,9 @@
 
 앞으로 직접 만들거나 커스터마이징하는 스킬은 이 저장소에서 관리합니다. Codex용 원본은 [`.agents/skills/`](.agents/skills/), 사용법과 클라우드 설정은 [개인 스킬 안내](docs/PERSONAL_SKILLS.md), 변경·검증·플러그인 배포 절차는 [커스터마이징 규칙](docs/CUSTOMIZATION.md)에 있습니다.
 
-개인 묶음 v0.2.0은 `web-design`, `card-news`, `diagram-design`, `engineering-upgrades`, `video-reader` 다섯 가지입니다. 계정용 비공개 플러그인은 [내 작업 도구](https://chatgpt.com/plugins/plugins_6ad77900d06c8191a674a2837de039b6)이며, 저장소 변경과 플러그인 배포는 별도 단계입니다. 기존 22개 분석은 [분석 보고서](docs/SKILL_AUDIT_2026-10-21.md), 통합 내역은 [통합 안내](docs/INTEGRATION_0.2.0.md)를 참고하세요.
+개인 묶음 v0.3.0은 `web-design`, `card-news`, `diagram-design`, `engineering-upgrades`, `video-reader`, `emil-design-eng` 여섯 가지입니다. 계정용 비공개 플러그인은 [내 작업 도구](https://chatgpt.com/plugins/plugins_6ad77900d06c8191a674a2837de039b6)이며, 저장소 변경과 플러그인 배포는 별도 단계입니다. 디자인 도구의 역할과 요청 예시는 [웹디자인 사용법](docs/WEB_DESIGN_SETUP.md), 기존 22개 분석은 [분석 보고서](docs/SKILL_AUDIT_2026-10-21.md), 이전 통합 내역은 [통합 안내](docs/INTEGRATION_0.2.0.md)를 참고하세요.
 
-아래 목록과 `skills/`, `.claude/`, `backup/`은 수집한 원본 자료입니다. 개인 플러그인은 `.agents/skills/`의 선택한 다섯 스킬만 포함합니다.
+아래 목록과 `skills/`, `.claude/`, `backup/`은 수집한 원본 자료입니다. 개인 플러그인은 `.agents/skills/`의 선택한 여섯 스킬만 포함합니다.
 
 Claude Code를 위한 커스텀 스킬 모음입니다. 개발 생산성을 높이기 위한 다양한 자동화 스킬들을 제공합니다.
 

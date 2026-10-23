@@ -23,14 +23,16 @@ class PackagingTests(unittest.TestCase):
                 self.assertIn('skills/video-reader/scripts/runtime.py', names)
                 self.assertFalse(any('__pycache__' in name or name.startswith('.agents/') for name in names))
 
-    def test_integrated_package_has_five_canonical_skills_and_font_license(self):
+    def test_integrated_package_has_six_canonical_skills_and_licenses(self):
         with tempfile.TemporaryDirectory() as temp:
             archive = Path(temp) / 'plugin.zip'
             builder.build(archive)
             with zipfile.ZipFile(archive) as plugin:
                 names = plugin.namelist()
                 skills = {n.split('/')[1] for n in names if n.endswith('/SKILL.md')}
-                self.assertEqual(skills, {'diagram-design', 'engineering-upgrades', 'video-reader', 'web-design', 'card-news'})
+                self.assertEqual(skills, {'diagram-design', 'engineering-upgrades', 'video-reader', 'web-design', 'card-news', 'emil-design-eng'})
+                self.assertIn('skills/emil-design-eng/LICENSE', names)
+                self.assertIn('skills/emil-design-eng/PROVENANCE.md', names)
                 self.assertIn('skills/card-news/assets/fonts/OFL.txt', names)
                 self.assertIn('skills/card-news/assets/fonts/NanumGothic-Regular.ttf', names)
                 self.assertNotIn('skills/codex/skill.md', names)
@@ -46,7 +48,7 @@ class PackagingTests(unittest.TestCase):
             with self.subTest(private=private), tempfile.TemporaryDirectory() as temp:
                 root = Path(temp)
                 skills = root / 'skills'
-                for name in ('diagram-design', 'engineering-upgrades', 'video-reader', 'web-design', 'card-news'):
+                for name in ('diagram-design', 'engineering-upgrades', 'video-reader', 'web-design', 'card-news', 'emil-design-eng'):
                     (skills / name).mkdir(parents=True)
                     (skills / name / 'SKILL.md').write_text(f'---\nname: {name}\ndescription: Fixture skill.\n---\n')
                 font_dir = skills / 'card-news/assets/fonts'
