@@ -14,6 +14,8 @@ This repository contains reusable skills in `.agents/skills/`:
 
 Read the relevant skill's SKILL.md before use. Supporting resources live in that skill's directory. Explain results in the user's language. Existing authorization and task scope take precedence over optional setup prompts in imported guidance.
 
+For each new website/page or substantial visual redesign, ask the user to choose or confirm the visual style before style-dependent creation, then wait for the answer. Keep that choice through the current task. The web-design skill contains the portable version of this personal preference.
+
 For video runtime setup use Python 3.11–3.13 (3.12 recommended):
 `python3 .agents/skills/video-reader/scripts/setup.py`
 Then run `python3 .agents/skills/video-reader/scripts/run.py doctor`.

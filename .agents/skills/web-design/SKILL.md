@@ -9,7 +9,13 @@ Turn the user's purpose into a coherent, usable web experience. Match the reques
 
 ## Establish the brief
 
-Read existing project instructions, relevant pages, components, styles and routes before choosing a stack or inventing a service. Preserve the user's brand, font, section count, framework and dependency constraints. Reuse available context and authorization; ask only when an unresolved fact blocks a meaningful behavior or decision. State reasonable assumptions for optional missing details and continue.
+### Personal preference: ask about style first
+
+At the start of each new website, web page or substantial visual redesign, always ask the user which visual style they want before choosing a direction or creating the design. Offer a few concise options suited to the purpose, such as Apple-like restraint, Linear-like density, warm editorial, or a custom reference. Wait for the answer before style-dependent implementation; read-only project inspection may continue.
+
+If the request already names a style or supplies a reference, ask a brief confirmation using that direction rather than offering unrelated choices. Once the user answers for the current task, reuse that choice and do not ask again during routine iterations. A later explicit instruction to choose autonomously overrides this preference. Code-only fixes and reviews that do not create or redesign visuals do not require a new style question.
+
+Read existing project instructions, relevant pages, components, styles and routes before choosing a stack or inventing a service. Preserve the user's brand, font, section count, framework and dependency constraints. Reuse available context and authorization. Beyond the required style question above, ask only when an unresolved fact blocks a meaningful behavior or decision. State reasonable assumptions for optional missing details and continue.
 
 Use [design-brief.md](references/design-brief.md) when a design prompt, new page or unclear visual direction needs structure. Keep its output proportional to the request. For a small change, record only the affected goal, interface and completion criteria.
 
