@@ -17,6 +17,8 @@ Choose sections that answer the audience's actual questions and lead to the prim
 
 ## Design and implement
 
+When the user names a brand, Apple-style interaction, OpenDesign, or Vercel UI review, use [design-sources.md](references/design-sources.md) to select the relevant source and bundled specialist. Keep existing project constraints and verify which source was actually applied.
+
 - Create a consistent hierarchy through typography, spacing, color and content density. Follow an existing design system; choose a deliberate style when none exists. Common fonts, simple grids and restrained backgrounds are valid when they serve the brand.
 - Specify only useful tokens and component states. Use legible Korean fonts when appropriate, sufficient contrast, semantic controls, visible keyboard focus, responsive layouts and reduced-motion behavior. Do not add motion or packages merely to satisfy a style checklist.
 - Connect the main CTA to the requested destination or existing project action. Match established loading, success, validation and error handling; avoid duplicate submissions where relevant. Identify missing service connections honestly rather than presenting a decorative button as a completed flow.

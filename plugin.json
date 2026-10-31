@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "personal-agent-skills",
-  "version": "0.3.0",
+  "version": "0.5.0",
   "description": "웹디자인, 카드뉴스, 다이어그램, 개발 점검, 영상 분석을 위한 개인 스킬 모음입니다. 이미지·영상 처리에는 Python 실행 환경이 필요합니다.",
   "repository": "https://github.com/dydrl2001-source/my-skills",
   "author": {"name": "용기 존재와", "email": "dydrl2001@gmail.com"},

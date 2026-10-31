@@ -23,14 +23,18 @@ class PackagingTests(unittest.TestCase):
                 self.assertIn('skills/video-reader/scripts/runtime.py', names)
                 self.assertFalse(any('__pycache__' in name or name.startswith('.agents/') for name in names))
 
-    def test_integrated_package_has_six_canonical_skills_and_licenses(self):
+    def test_integrated_package_has_eight_canonical_skills_and_licenses(self):
         with tempfile.TemporaryDirectory() as temp:
             archive = Path(temp) / 'plugin.zip'
             builder.build(archive)
             with zipfile.ZipFile(archive) as plugin:
                 names = plugin.namelist()
                 skills = {n.split('/')[1] for n in names if n.endswith('/SKILL.md')}
-                self.assertEqual(skills, {'diagram-design', 'engineering-upgrades', 'video-reader', 'web-design', 'card-news', 'emil-design-eng'})
+                self.assertEqual(skills, {'diagram-design', 'engineering-upgrades', 'video-reader', 'web-design', 'card-news', 'emil-design-eng', 'apple-design', 'web-design-guidelines'})
+                self.assertIn('skills/apple-design/LICENSE', names)
+                self.assertIn('skills/apple-design/PROVENANCE.md', names)
+                self.assertIn('skills/web-design-guidelines/PROVENANCE.md', names)
+                self.assertIn('skills/web-design/references/design-sources.md', names)
                 self.assertIn('skills/emil-design-eng/LICENSE', names)
                 self.assertIn('skills/emil-design-eng/PROVENANCE.md', names)
                 self.assertIn('skills/card-news/assets/fonts/OFL.txt', names)
@@ -48,7 +52,7 @@ class PackagingTests(unittest.TestCase):
             with self.subTest(private=private), tempfile.TemporaryDirectory() as temp:
                 root = Path(temp)
                 skills = root / 'skills'
-                for name in ('diagram-design', 'engineering-upgrades', 'video-reader', 'web-design', 'card-news', 'emil-design-eng'):
+                for name in builder.EXPECTED_SKILLS:
                     (skills / name).mkdir(parents=True)
                     (skills / name / 'SKILL.md').write_text(f'---\nname: {name}\ndescription: Fixture skill.\n---\n')
                 font_dir = skills / 'card-news/assets/fonts'

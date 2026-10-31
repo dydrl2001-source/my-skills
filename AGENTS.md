@@ -9,6 +9,8 @@ This repository contains reusable skills in `.agents/skills/`:
 - `web-design`: audience, brand, user journey and working web actions.
 - `card-news`: portable Korean PNG carousel rendering with a bundled licensed font.
 - `emil-design-eng`: Emil Kowalski's UI polish, component and animation guidance (MIT; pinned upstream in PROVENANCE.md).
+- `apple-design`: Apple-inspired fluid web interaction guidance (MIT; pinned upstream and adaptation in PROVENANCE.md).
+- `web-design-guidelines`: original review adapter for Vercel's current Web Interface Guidelines.
 
 Read the relevant skill's SKILL.md before use. Supporting resources live in that skill's directory. Explain results in the user's language. Existing authorization and task scope take precedence over optional setup prompts in imported guidance.
 
