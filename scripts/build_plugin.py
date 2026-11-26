@@ -13,6 +13,7 @@ PRIVATE_SUFFIXES = {'.mp4', '.mov', '.webm', '.wav', '.mp3', '.pem', '.key'}
 PRIVATE_NAMES = {'transcript.txt', 'transcript.json'}
 EXPECTED_SKILLS = {
     'apple-design', 'card-news', 'diagram-design', 'emil-design-eng',
+    'clone-app', 'clone-website', 'true-web-clone',
     'engineering-upgrades', 'humanizer-kr', 'hwpkit', 'hwpx-editing',
     'k-humanizer', 'video-reader', 'web-design', 'web-design-guidelines',
 }

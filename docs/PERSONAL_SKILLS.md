@@ -10,8 +10,19 @@
 | engineering-upgrades | 개발 용어, 모듈 인터페이스, 요구사항과 표준 리뷰 |
 | video-reader | 영상의 시간별 프레임, 모아보기, 로컬 음성 전사 |
 | emil-design-eng | Emil Kowalski의 UI 디테일, 컴포넌트, 애니메이션 구현·리뷰 기준 |
+| apple-design | Apple 스타일의 화면·동작 설계와 구현 |
+| web-design-guidelines | 웹 인터페이스 가이드라인에 따른 화면 점검 |
+| humanizer-kr | 한국어 문장의 번역투·기계적인 표현 분석과 다듬기 |
+| k-humanizer | 용도에 맞는 자연스러운 한국어 작성과 수정 |
+| hwpkit | 한글 문서 읽기·미리보기와 HWP/HWPX 생성 |
+| hwpx-editing | 기존 HWPX 양식의 서식을 유지하는 수정 |
+| clone-app | 앱 스크린샷에서 Expo / React Native 화면·동작 재현 |
+| clone-website | 웹 주소에서 수정 가능한 웹 코드와 상호작용 재구현 |
+| true-web-clone | 공개 웹 리소스·애니메이션·런타임을 보존하는 로컬 복제 |
 
 웹디자인 스킬과 Figma·브라우저 도구의 역할, 실제 요청 예시는 [웹디자인 사용법](WEB_DESIGN_SETUP.md)을 참고하세요.
+
+복제 도구 세 가지의 차이, 로컬 Codex 연결, 앱·웹 프로젝트 준비는 [앱·웹 복제 도구 안내](CLONING_TOOLS.md)에 있습니다. GitHub 등록만으로 다른 프로젝트나 계정용 플러그인에 자동 적용되지는 않습니다.
 
 ## Codex 클라우드
 
@@ -31,7 +42,7 @@ python3 .agents/skills/video-reader/scripts/run.py doctor
 원본 스킬은 `.agents/skills/` 한 곳에서 관리합니다. 아래 명령은 플러그인 규격에 맞게 ZIP 안에서 `skills/`로 배치합니다.
 
 ```sh
-python3 scripts/build_plugin.py --output ../personal-agent-skills-0.3.0.zip
+python3 scripts/build_plugin.py --output ../personal-agent-skills-0.7.0.zip
 ```
 
 생성한 플러그인을 설치한 계정의 지원되는 ChatGPT/Codex 화면에서 사용할 수 있습니다. 실제 도구 제공 여부는 실행 환경에 따릅니다. 특히 영상 스킬은 Python·셸·이미지 확인 도구가 필요하고, 설치만으로 클라우드 영상 서버가 생기지 않습니다. 모바일은 접속 화면일 수 있지만 실행 환경의 도구가 필요합니다. 플러그인에 API 키나 로그인 세션은 포함하지 않습니다.

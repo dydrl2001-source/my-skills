@@ -13,6 +13,11 @@ This repository contains reusable skills in `.agents/skills/`:
 - `web-design-guidelines`: original review adapter for Vercel's current Web Interface Guidelines.
 - `hwpkit`: read and preview Korean Hangul documents, or create HWP/HWPX files from Markdown.
 - `hwpx-editing`: edit and validate existing HWPX documents and templates.
+- `clone-app`: rebuild mobile app screenshots as an Expo / React Native project with working local interactions.
+- `clone-website`: rebuild web pages as editable code from observed layout, assets, and behavior.
+- `true-web-clone`: preserve public frontend resources, animation, and runtime behavior in a local website copy.
+
+For cloning skills, follow [docs/CLONING_TOOLS.md](docs/CLONING_TOOLS.md) and the skill's setup reference. Work in a separate app workspace; this skills repository is not an Expo or Next.js app. GitHub source installation, local runtime setup, and account-plugin deployment are separate operations.
 
 Read the relevant skill's SKILL.md before use. Supporting resources live in that skill's directory. Explain results in the user's language. Existing authorization and task scope take precedence over optional setup prompts in imported guidance.
 

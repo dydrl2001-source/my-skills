@@ -5,7 +5,8 @@
 ## 원본과 배포본
 
 - 원본은 이 저장소의 `.agents/skills/<skill-name>/`에 저장합니다. 기존 `skills/`와 `.claude/`의 자료를 자동 통합하거나 설치하지 않습니다.
-- 현재 개인 묶음은 `web-design`, `card-news`, `diagram-design`, `engineering-upgrades`, `video-reader`, `emil-design-eng`, `apple-design`, `web-design-guidelines`, `humanizer-kr`, `k-humanizer`, `hwpkit`, `hwpx-editing`입니다. 새 스킬을 묶음에 넣을 때는 빌더의 선택 목록과 테스트를 함께 수정합니다. OpenDesign은 별도 앱이며 `web-design`의 선택형 출처 참조로만 연결합니다.
+- 저장소의 개인 묶음은 `web-design`, `card-news`, `diagram-design`, `engineering-upgrades`, `video-reader`, `emil-design-eng`, `apple-design`, `web-design-guidelines`, `humanizer-kr`, `k-humanizer`, `hwpkit`, `hwpx-editing`, `clone-app`, `clone-website`, `true-web-clone`입니다. 새 스킬을 묶음에 넣을 때는 빌더의 선택 목록과 테스트를 함께 수정합니다. OpenDesign은 별도 앱이며 `web-design`의 선택형 출처 참조로만 연결합니다.
+- 앱·웹 복제 스킬의 프로젝트 준비와 로컬 연결은 [복제 도구 안내](CLONING_TOOLS.md)를 따릅니다. 스킬 원본과 참조 파일을 GitHub에 넣는 작업은 실제 앱의 의존성 설치나 계정 플러그인 배포와 구분합니다.
 - `hwpkit`은 한글 문서를 읽고 새로 만들거나 미리 봅니다. `hwpx-editing`은 기존 HWPX 양식의 서식을 살려 수정합니다. [한글 문서 MCP 연결](../.agents/skills/hwpkit/references/setup.md)은 로컬 Codex에서 설정합니다.
 - Codex 로컬의 `~/.codex/skills`와 플러그인 캐시는 배포된 사본입니다. 캐시를 원본으로 편집하지 않습니다.
 - 계정용 비공개 플러그인은 [내 작업 도구](https://chatgpt.com/plugins/plugins_6ad77900d06c8191a674a2837de039b6)이며 ID는 `plugins_6ad77900d06c8191a674a2837de039b6`입니다. 변경 시 기존 ID와 공개 범위를 유지하고 중복 플러그인을 만들지 않습니다.

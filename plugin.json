@@ -1,16 +1,16 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "personal-agent-skills",
-  "version": "0.6.0",
-  "description": "웹디자인, 카드뉴스, 다이어그램, 개발 점검, 영상 분석, 한국어 글 다듬기, 한글 문서 작업을 위한 개인 스킬 모음입니다.",
+  "version": "0.7.0",
+  "description": "앱·웹 복제, 웹디자인, 카드뉴스, 다이어그램, 개발 점검, 영상 분석, 한국어 글 다듬기, 한글 문서 작업을 위한 개인 스킬 모음입니다.",
   "repository": "https://github.com/dydrl2001-source/my-skills",
   "author": {"name": "용기 존재와", "email": "dydrl2001@gmail.com"},
   "extensions": {
     "com.openai": {
       "interface": {
         "displayName": "내 작업 도구",
-        "shortDescription": "웹디자인·카드뉴스·개발·영상 도구",
-        "longDescription": "웹 화면 기획과 구현, 한글 카드뉴스 PNG 제작, 다이어그램, 개발 요구사항과 리뷰 점검, 영상 장면 추출과 음성 전사를 위한 개인 스킬 모음입니다. 카드뉴스와 영상 처리는 Python·셸·이미지 확인 도구가 있는 환경에서 동작합니다.",
+        "shortDescription": "앱·웹 복제·디자인·개발·영상·문서 도구",
+        "longDescription": "앱 스크린샷과 웹 주소를 바탕으로 화면·동작을 재현하고, 웹 화면 기획과 구현, 한글 카드뉴스 PNG 제작, 다이어그램, 개발 점검, 영상 분석, 한국어 글과 한글 문서 작업을 돕는 개인 스킬 모음입니다. 복제 작업은 별도 프로젝트와 브라우저 도구가 필요하며, 카드뉴스와 영상 처리는 Python·셸·이미지 확인 도구가 있는 환경에서 동작합니다.",
         "developerName": "용기 존재와",
         "category": "Productivity",
         "capabilities": [],

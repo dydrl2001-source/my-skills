@@ -32,12 +32,22 @@ class PackagingTests(unittest.TestCase):
                 skills = {n.split('/')[1] for n in names if n.endswith('/SKILL.md')}
                 self.assertEqual(skills, {
                     'apple-design', 'card-news', 'diagram-design', 'emil-design-eng',
+                    'clone-app', 'clone-website', 'true-web-clone',
                     'engineering-upgrades', 'humanizer-kr', 'hwpkit', 'hwpx-editing',
                     'k-humanizer', 'video-reader', 'web-design', 'web-design-guidelines',
                 })
-                for skill in ('humanizer-kr', 'hwpkit', 'hwpx-editing', 'k-humanizer'):
+                for skill in ('humanizer-kr', 'hwpkit', 'hwpx-editing', 'k-humanizer',
+                              'clone-app', 'clone-website', 'true-web-clone'):
                     self.assertIn(f'skills/{skill}/LICENSE', names)
                     self.assertIn(f'skills/{skill}/PROVENANCE.md', names)
+                for resource in ('clone-app/references/setup.md',
+                                 'clone-website/references/setup.md',
+                                 'clone-website/references/inspection-guide.md',
+                                 'clone-website/references/framer-and-motion.md',
+                                 'true-web-clone/references/complex-motion-3d.md',
+                                 'true-web-clone/references/pitfalls.md',
+                                 'true-web-clone/agents/openai.yaml'):
+                    self.assertIn(f'skills/{resource}', names)
                 self.assertIn('skills/hwpkit/references/setup.md', names)
                 self.assertIn('skills/hwpx-editing/scripts/hwpxlib.py', names)
                 self.assertIn('skills/apple-design/LICENSE', names)

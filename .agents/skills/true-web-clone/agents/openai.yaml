@@ -1,0 +1,4 @@
+interface:
+  display_name: "True Web Clone"
+  short_description: "Source-first animated website cloning"
+  default_prompt: "Use $true-web-clone to clone this website into a local folder, preserving assets, animations, and verification reports."
