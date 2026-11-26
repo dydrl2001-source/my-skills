@@ -107,6 +107,7 @@ to the source** — meaning "if the original opens in 한글, your edit opens to
 각 함수의 함정은 docstring과 가이드에 있다.
 
 Scripts need **lxml**; table→Excel also needs **openpyxl**. Python 3.10+.
+If installed with `scripts/install_hangul.sh`, use `~/.local/share/codex-hangul/venv/bin/python` in place of `python` in these commands.
 
 ## Where to read in the guide (`references/hwpx-guide.md`)
 

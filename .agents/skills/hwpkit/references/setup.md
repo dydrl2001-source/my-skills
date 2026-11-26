@@ -1,5 +1,21 @@
 # 로컬 실행과 MCP 연결
 
+## 맥미니 설치
+
+터미널에 `codex`, `git`, `node`(20 이상), `npm`, `python3`(3.10 이상)가 있으면 아래 명령으로 두 스킬과 MCP를 설치한다.
+
+```sh
+hangul_repo="$HOME/.local/share/codex-hangul/my-skills"
+if [ ! -e "$hangul_repo" ]; then
+  git clone --depth 1 https://github.com/dydrl2001-source/my-skills.git "$hangul_repo"
+fi
+bash "$hangul_repo/scripts/install_hangul.sh"
+```
+
+이 경로의 저장소는 스킬이 참조하므로 설치 후에도 보관한다. 설치가 끝나면 로컬 Codex에서 각 MCP의 도구를 확인하고, 샘플 HWPX를 만들어 다시 읽어 본다.
+
+## 직접 등록
+
 Node.js 18 이상과 Git이 필요하다. `hwpkit` 소스는 스킬 저장소 밖의 원하는 작업 폴더에 한 번만 내려받는다.
 
 ```sh
