@@ -1,0 +1,15 @@
+[submodule "design-design-taste-frontend"]
+	path = vendor/design-skills/design-taste-frontend
+	url = https://github.com/Leonxlnx/taste-skill.git
+[submodule "design-impeccable"]
+	path = vendor/design-skills/impeccable
+	url = https://github.com/pbakaus/impeccable.git
+[submodule "design-hallmark"]
+	path = vendor/design-skills/hallmark
+	url = https://github.com/Nutlope/hallmark.git
+[submodule "design-huashu-design"]
+	path = vendor/design-skills/huashu-design
+	url = https://github.com/alchaincyf/huashu-design.git
+[submodule "design-unslop"]
+	path = vendor/design-skills/unslop
+	url = https://github.com/heydamir/unslop.git

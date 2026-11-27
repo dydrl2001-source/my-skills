@@ -2,6 +2,30 @@
 
 GitHub는 스킬 원본과 변경 이력을 보관합니다. 사용하려는 Codex의 로컬 스킬 폴더나 계정 플러그인에도 배포해야 합니다. 저장소에 올리는 일과 설치·연결은 별도입니다.
 
+## 릴에 소개된 디자인 스킬 5종
+
+이 저장소에는 다섯 공식 원본을 고정된 커밋의 Git 서브모듈로 연결했습니다. Claude Code는 체크아웃한 저장소의 `.claude/skills/`에서 다섯 스킬을 읽습니다.
+
+| 스킬 | 용도 | 공식 원본 |
+| --- | --- | --- |
+| `design-taste-frontend` | 웹의 시각 방향과 레이아웃 설계 | [Taste Skill](https://github.com/Leonxlnx/taste-skill) |
+| `impeccable` | 기존 UI 진단, 접근성 점검, 마무리 | [Impeccable](https://github.com/pbakaus/impeccable) |
+| `hallmark` | 테마 기반 화면 설계와 리뷰 | [Hallmark](https://github.com/Nutlope/hallmark) |
+| `huashu-design` | 앱 시안, HTML 발표자료, 인포그래픽 | [Huashu Design](https://github.com/alchaincyf/huashu-design) |
+| `unslop` | 기존 화면에서 획일적인 레이아웃과 장식 개선 | [Unslop](https://github.com/heydamir/unslop) |
+
+새로 받을 때는 아래 명령을 사용합니다.
+
+```bash
+git clone --recurse-submodules https://github.com/dydrl2001-source/my-skills.git
+cd my-skills
+claude
+```
+
+기존 체크아웃은 최신 커밋을 받은 뒤 저장소 루트에서 `git submodule update --init`을 실행하고 Claude Code를 새로 시작합니다. 각 원본의 런타임 요구 사항과 다른 프로젝트 또는 Codex에서 쓰는 설치 방법은 표의 공식 저장소에서 확인할 수 있습니다.
+
+영상 출처는 [디렉터AI랩 릴](https://www.instagram.com/reel/DgNl7XYSq5i/)입니다.
+
 ## 각 도구의 역할
 
 | 구성 | 역할 | 2026-10-23 이 PC 점검 결과 |
